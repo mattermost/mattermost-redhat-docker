@@ -48,7 +48,7 @@ USER mattermost
 HEALTHCHECK CMD curl --fail http://localhost:8000 || exit 1
 
 # Configure entrypoint and command
-COPY app/entrypoint.sh /
+COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 WORKDIR /mattermost
 CMD ["mattermost"]
