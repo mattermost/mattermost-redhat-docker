@@ -3,7 +3,7 @@ MAINTAINER carlos@mattermost.com
 
 # Some ENV variables
 ENV PATH="/mattermost/bin:${PATH}"
-ENV MM_VERSION=4.10.10
+ENV MM_VERSION=4.10.9
 ENV MM_RHEL_PACKAGE_VERSION=1.0-1
 
 LABEL name="Mattermost-Enterprise-Edition" \
