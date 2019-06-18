@@ -3,7 +3,7 @@ MAINTAINER carlos@mattermost.com
 
 # Some ENV variables
 ENV PATH="/mattermost/bin:${PATH}"
-ENV MM_VERSION=4.10.3
+ENV MM_VERSION=4.10.10
 ENV MM_RHEL_PACKAGE_VERSION=1.0-1
 
 LABEL name="Mattermost-Enterprise-Edition" \
@@ -51,7 +51,7 @@ HEALTHCHECK CMD curl --fail http://localhost:8000 || exit 1
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 WORKDIR /mattermost
-CMD ["mattermost"]
+CMD ["platform"]
 
 # Expose port 8000 of the container
 EXPOSE 8000
